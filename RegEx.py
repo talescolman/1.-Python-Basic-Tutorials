@@ -9,8 +9,7 @@ if result:
 else:
   print("Search unsuccessful")
   
-  
-# The best way to use RegEx is the following:
+# The best way to use RegEx is the following (using findall to return your results):
 string = "Republicans Are Split On The Infrastructure Bill, But It's Mostly A Messaging Fight."
 result = re.findall('\S', string)
 print(result)
