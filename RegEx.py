@@ -5,9 +5,15 @@ pattern = '\D'
 result = re.match(pattern, string) #re.match search for the beginning of the string
 
 if result: 
-  print("Search successful".)
+  print("Search successful")
 else:
-  print("Search unsuccessful".)
+  print("Search unsuccessful")
+  
+  
+# The best way to use RegEx is the following:
+string = "Republicans Are Split On The Infrastructure Bill, But It's Mostly A Messaging Fight."
+result = re.findall('\S', string)
+print(result)
 
 # if you need to use special characters as raw string, you should put an r before your RegEx.
 
