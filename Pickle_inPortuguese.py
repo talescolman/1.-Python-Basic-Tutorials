@@ -1,14 +1,10 @@
-# pickle serve para salvar e abrir arquivos
-# serve para armazenar objetos que nós mesmos criamos
+# pickle serve para salvar e abrir arquivos (no Python)
+# serve para armazenar objetos (do Python) que nos mesmos criamos
 import pickle
-nome_arq = open('arquivo.pck', 'wb')
-# wb = escrever no arquivo
-# criar algo para salvar no arquivo
-new_list = [1,2,3]
-# salvar a coisa no arquivo
-pickle.dump(new_list, nome_arq)
-# caso queira fechar o arquivo
-nome_arq.close()
+nome_arq = open('arquivo.pck', 'wb') # wb = escrever no arquivo
+new_list = [1,2,3] # criar algo (no meu exemplo, uma lista) para salvar no arquivo
+pickle.dump(new_list, nome_arq) # salvar a minha lista (ou o que você quiser) no arquivo
+nome_arq.close() # caso queira fechar o arquivo
 
 # criar uma classe 
 class Pessoa:
@@ -28,14 +24,11 @@ pickle.dump(carlos, nome_arq)
 nome_arq.close()
 
 # LER UM ARQUIVO EM PICKLE
-ler_arq = open('arquivo.pck', 'rb')
-# rb = modo de leitura
+ler_arq = open('arquivo.pck', 'rb') # rb = modo de leitura
+x = pickle.load(ler_arq) # carregar o obejto
 
-# agora é necessário carregar o obejto
-x = pickle.load(ler_arq)
-
-# ele lê em ordem, então a primeira letra 9x) vai abrir o primeiro objeto
-# para carregar o segundo (pessoa) temos que usar outra letra então (Y no exemplo)
+# ele lê em ordem, então a primeira letra (x) vai abrir o primeiro objeto
+# para carregar o segundo (pessoa) temos que usar então outra letra (Y no exemplo)
 y = pickle.load(ler_arq)
 
 # se eu quiser resgatar algum atributo
