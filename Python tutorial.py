@@ -1,5 +1,3 @@
-# Python complete tutorial
-
 # 1) Hello World:
 print("Hello, world!")
 
@@ -44,7 +42,7 @@ def double(num):
 
 # 7) VARIABLES (Python is a type-inferred language, so you don't have to explicitly define the variable type):
 first_name = "Godot" # use _ to separate words in the variable's name
-age = 27 # you should never start a variable with a digit
+age = 27 # you should never start a variable name with a digit
 
 # you can assigning multiple values to multiple variables
 a, b, c = "Facebook", "Instagram", 27
