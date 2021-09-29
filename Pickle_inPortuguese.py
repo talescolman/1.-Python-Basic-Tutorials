@@ -1,10 +1,18 @@
 # pickle serve para salvar e abrir arquivos (no Python)
 # serve para armazenar objetos (do Python) que nos mesmos criamos
 import pickle
-nome_arq = open('arquivo.pck', 'wb') # wb = escrever no arquivo
-new_list = [1,2,3] # criar algo (no meu exemplo, uma lista) para salvar no arquivo
-pickle.dump(new_list, nome_arq) # salvar a minha lista (ou o que você quiser) no arquivo
-nome_arq.close() # caso queira fechar o arquivo
+
+# wb = escrever no arquivo
+nome_arq = open('arquivo.pck', 'wb') 
+
+# criar algo (no meu exemplo, uma lista) para salvar no arquivo
+new_list = [1,2,3] 
+
+# salvar a minha lista (ou o que você quiser) no arquivo
+pickle.dump(new_list, nome_arq) 
+
+# caso queira fechar o arquivo
+nome_arq.close() 
 
 # criar uma classe 
 class Pessoa:
